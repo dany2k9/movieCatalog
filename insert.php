@@ -68,7 +68,7 @@ if($_SESSION["session_video_user_25"])
 					
 					for($i = 0; $i < $_POST['totalgenres']; $i++)
 					{
-						$mov->add_genre($_POST['tit'], trim($_POST['genre'.$i]), $_SESSION['session_video_user_25']); 
+						$mov->add_genre(mysql_real_escape_string($tit), trim($_POST['genre'.$i]), $_SESSION['session_video_user_25']);
 					}
 					
 				}
@@ -86,7 +86,7 @@ if($_SESSION["session_video_user_25"])
 					
 					for($i = 0; $i < $_POST['totalgenres']; $i++)
 					{
-						$mov->add_genre($_POST['tit'], trim($_POST['genre'.$i]), $_SESSION['session_video_user_25']); 
+						$mov->add_genre(mysql_real_escape_string($tit), trim($_POST['genre'.$i]), $_SESSION['session_video_user_25']);
 					}
 					
 				}
@@ -134,7 +134,7 @@ if($_SESSION["session_video_user_25"])
 				{
 					for($i = 0; $i < $_POST['totalgenres']; $i++)
 					{
-						$mov->add_genre($_POST['tit'], trim($_POST['genre'.$i]), $_SESSION['session_video_user_25']); 
+						$mov->add_genre(mysql_real_escape_string($tit), trim($_POST['genre'.$i]), $_SESSION['session_video_user_25']);
 					}
 					
 				}
@@ -151,7 +151,7 @@ if($_SESSION["session_video_user_25"])
 				{
 					for($i = 0; $i < $_POST['totalgenres']; $i++)
 					{
-							$mov->add_genre($_POST['tit'], trim($_POST['genre'.$i]), $_SESSION['session_video_user_25']); 
+							$mov->add_genre(mysql_real_escape_string($tit), trim($_POST['genre'.$i]), $_SESSION['session_video_user_25']);
 					}
 					
 				}
